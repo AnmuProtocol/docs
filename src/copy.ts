@@ -15,7 +15,7 @@ export const FUNDING_SENTENCE =
 export const PUBLIC_PAYMENT_SENTENCE =
   "Donations and claim payments are public. A claim shows the account that received the BNB. The campaign record does not store that account in advance.";
 
-export const appUrl = publicHttp(import.meta.env.VITE_APP_URL as string | undefined, "http://127.0.0.1:5173");
+export const appUrl = publicHttp(import.meta.env.VITE_APP_URL as string | undefined, "https://app.anmu.pro");
 
 export const telegramUrl = publicHttp(import.meta.env.VITE_TELEGRAM_URL as string | undefined, "https://t.me");
 
