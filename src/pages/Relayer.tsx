@@ -1,5 +1,6 @@
 import { useI18n, type CopyKey } from "../i18n.tsx";
 import { DocPage } from "../layout.tsx";
+import { bscAddress, RELAYER_ADDRESS } from "./Architecture.tsx";
 
 const RULES = ["ry1", "ry2", "ry3", "ry4", "ry5", "ry6"] as const satisfies readonly CopyKey[];
 
@@ -17,6 +18,7 @@ export function RelayerPage() {
     >
       <section id="relayer">
         <h2>{text("ryRelayer")}</h2>
+        <p><a href={bscAddress(RELAYER_ADDRESS)} target="_blank" rel="noreferrer"><code>{RELAYER_ADDRESS}</code></a></p>
         <p>{text("ryRelayerP")}</p>
         <ul className="fields">
           {RULES.map(key => <li key={key}>{text(key)}</li>)}
