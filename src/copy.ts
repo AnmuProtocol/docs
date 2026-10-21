@@ -17,9 +17,9 @@ export const PUBLIC_PAYMENT_SENTENCE =
 
 export const appUrl = publicHttp(import.meta.env.VITE_APP_URL as string | undefined, "https://app.anmu.pro");
 
-export const telegramUrl = publicHttp(import.meta.env.VITE_TELEGRAM_URL as string | undefined, "https://t.me");
+export const telegramUrl = publicHttp(import.meta.env.VITE_TELEGRAM_URL as string | undefined, "https://t.me/anmuprotocol");
 
-export const xUrl = publicHttp(import.meta.env.VITE_X_URL as string | undefined, "https://x.com");
+export const xUrl = publicHttp(import.meta.env.VITE_X_URL as string | undefined, "https://x.com/anmuprotocol");
 
 function publicHttp(value: string | undefined, fallback: string): string {
   const candidate = value?.trim() || fallback;
